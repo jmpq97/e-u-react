@@ -4,14 +4,14 @@ import '../styles/activities.css';
 const Game = ({ selectedLanguage }) => {
   return (
     <div className="game-background">
-      <div className="container mt-5">
-        <div className="row justify-content-center">
-          <div className="col-md-10">
-            <div className="embed-responsive embed-responsive-16by9 shadow-lg rounded">
+      <div className="custom-container">
+        <div className="custom-row">
+          <div className="custom-column">
+            <div className="custom-embed">
               <iframe 
                 className="embed-responsive-item" 
                 src="https://itch.io/embed-upload/8591120?color=333333" 
-                allowfullscreen="">
+                allowFullScreen>
               </iframe>
             </div>
           </div>

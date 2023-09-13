@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-// Importing componentsgit 
+// Importing components
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Game from './components/Game';
 import FAQ from './components/FAQ';
 import Homework from './components/Homework';
-import Footer from './components/Footer';
+import ConditionalFooter from './ConditionalFooter';
 
-// Import global styles
+// Import images
 import './styles/stylesheet.css';
 import './styles/header_EU.css';
 import './styles/landing_page.css';
@@ -36,11 +36,10 @@ function App() {
             {/* Add other routes as needed */}
           </Routes>
         </main>
-        <Footer />
+        <ConditionalFooter /> {/* Use the new component here */}
       </div>
     </Router>
   );
 }
-
 
 export default App;

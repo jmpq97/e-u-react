@@ -1,0 +1,33 @@
+.footer_EU {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 58, 64);
+    height: 60px;
+}
+
+.left-section-footer {
+    display: flex;
+    flex: 1 1;
+    /* height: 100%; */
+}
+
+.middle-section-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+}
+
+.utrgv-foot-logo {
+    /*vertical-align: middle;*/
+    width: 340px;
+    margin-top: 8px;
+}
+
+.social-media-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
