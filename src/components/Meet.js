@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/meet.css';
-import lozanoImage from '../styles/images/Characters/KAREN-OFICIAL.png';
+import lozanoImage from '../styles/images/Lozano.png';
 import PadillaImage from '../styles/images/Characters/Padilla1.png';
 import YorchImage from '../styles/images/Characters/Jorge 1.png';
 import JesseImage from '../styles/images/Characters/Jesse.png';
