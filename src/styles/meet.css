@@ -1,0 +1,63 @@
+body.TOP {
+    background-image: url('images/website-background.jpg');
+    background-size: cover; /* makes sure the image covers the entire element */
+    background-repeat: no-repeat; /* prevents image from repeating */
+    background-attachment: fixed; /* ensures the background stays fixed with regard to the viewport */
+    background-position: center center; /* centers the image */
+    height: 100%; /* takes the full height */
+    margin: 0; /* remove default margin */
+    overflow: hidden; /* hides any overflow */
+}
+
+.meet-section {
+    padding: 225px;
+    text-align: center;
+  }
+  
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    width: calc(20% - 20px);
+    text-align: center;
+    margin-bottom: 20px; /* Adding some space below each team member */
+  }
+  
+  .team-card {
+    width: 100%;
+    height: 200px; /* You can adjust this value to fit the images properly */
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin-bottom: 10px; /* Adding some space between the image and the text */
+  }
+  
+  .team-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  .front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+  }
+  
+  .lozanoImg {
+    size: 10px;
+  }
+
+  img, svg {
+    vertical-align: middle;
+    width: 100px;
+}

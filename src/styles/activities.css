@@ -1,4 +1,4 @@
-body.TOP {
+.meet-section {
     background-image: url('images/website-background.jpg');
     background-size: cover; /* makes sure the image covers the entire element */
     background-repeat: no-repeat; /* prevents image from repeating */

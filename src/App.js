@@ -15,6 +15,7 @@ import './styles/header_EU.css';
 import './styles/landing_page.css';
 import './styles/faq.css';
 import './styles/activities.css';
+import Meet from './components/Meet';
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
@@ -33,6 +34,7 @@ function App() {
             <Route path="/game" element={<Game />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/homework" element={<Homework />} />
+            <Route path="/meet" element={<Meet />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>
