@@ -15,7 +15,7 @@ import jessieImageEng from '../styles/images/jessie_eng.PNG';
 const NewsItem = ({ image, title, link, date, description }) => (
     <div className="col-md-4 news-item">
         <div className="news-image">
-            <img src={image} alt="News Image" />
+            <img src={image} alt="News" />
         </div>
         <div className="news-content">
             <h2 className="news-title"><a className="news-link" target="_blank" rel="noreferrer" href={link}>{title}</a></h2>
@@ -133,7 +133,7 @@ const Home = ({ selectedLanguage }) => {
     
                 <section className="row lozano-section">
                     <div className="col lozanoImg text-center">
-                        <img className="lozano" src={lozanoImage} alt="Lozano Image" />
+                        <img className="lozano" src={lozanoImage} alt="Dr. Lozano" />
                         <div className="tooltip">{t.tooltip}</div>
                         <div className="tooltipDos"></div>
                     </div>

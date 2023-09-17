@@ -7,7 +7,7 @@ import Home from './components/Home';
 import Game from './components/Game';
 import FAQ from './components/FAQ';
 import Homework from './components/Homework';
-import ConditionalFooter from './ConditionalFooter';
+import Footer from './components/Footer';
 
 // Import images
 import './styles/stylesheet.css';
@@ -38,7 +38,7 @@ function App() {
             {/* Add other routes as needed */}
           </Routes>
         </main>
-        <ConditionalFooter /> {/* Use the new component here */}
+        <Footer /> {/* Use the new component here */}
       </div>
     </Router>
   );

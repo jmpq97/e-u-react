@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../styles/header_EU.css';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useLocation } from 'react-router-dom';
 
-const Navbar = ({onLanguageChange}) => {
+const Navbar = ({ onLanguageChange }) => {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const languages = {
-    en: { Activities: 'Activities', FAQ: 'FAQ', Downloads: 'Downloads', label: 'ENG' },
-    es: { Activities: 'Actividades', FAQ: 'Preguntas Frecuentes', Downloads: 'Descargas', label: 'ESP' },
+    en: { Home: 'Home', Activities: 'Games', FAQ: 'FAQ', Downloads: 'Downloads', Meet: 'Meet', label: 'ENG' },
+    es: { Home: 'Inicio', Activities: 'Juegos', FAQ: 'Preguntas Frecuentes', Downloads: 'Descargas', Meet: 'Encuentro', label: 'ESP' },
   };
 
   const handleLanguageClick = (event) => {
@@ -19,7 +20,7 @@ const Navbar = ({onLanguageChange}) => {
 
   const renderLanguageLink = (lang) => (
     <a
-      href="#"
+      href="/#"
       className={`language-link ${selectedLanguage === lang ? 'selected' : ''}`}
       data-lang={lang}
       onClick={handleLanguageClick}
@@ -28,15 +29,33 @@ const Navbar = ({onLanguageChange}) => {
     </a>
   );
 
+  const pageTitles = {
+    '/': { en: 'Energy & U', es: 'Energy & U' },
+    '/game': { en: 'Games', es: 'Juegos' },
+    '/faq': { en: 'FAQ', es: 'Preguntas Frecuentes' },
+    '/meet': { en: 'Meet the team!', es: '¡Conócenos!' },
+  };
+
+  const location = useLocation();
+
+  const navOptions = {
+    '/': [<a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+    '/game': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+    '/faq': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>],
+    '/meet': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+  };
+
+  const currentOptions = navOptions[location.pathname] || [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>];
+
   return (
     <header className="header_EU">
       <div className="col left-section-EU">
         <div className="containerLogo">
-          <img className="rotate-center" src="images/energy-and-u-white.png" alt="Logo Image" />
+          <img className="rotate-center" src="images/energy-and-u-white.png" alt="Logo" />
         </div>
       </div>
       <div className="middle-section-header">
-        <span className="middleTitle">Energy & U</span>
+        <span className="middleTitle">{pageTitles[location.pathname][selectedLanguage] || 'Energy & U'}</span>
       </div>
       <div className="col right-section-EU text-end">
         <div className="dropdown d-md-none">
@@ -45,34 +64,16 @@ const Navbar = ({onLanguageChange}) => {
               Menu <i className="fas fa-chevron-down"></i>
             </Dropdown.Toggle>
             <Dropdown.Menu>
-              <Dropdown.Item href="/game">{languages[selectedLanguage].Activities}</Dropdown.Item>
-              <Dropdown.Item href="/faq">{languages[selectedLanguage].FAQ}</Dropdown.Item>
-              <Dropdown>
-                <Dropdown.Toggle as={Dropdown.Item} id="dropdown-downloads">
-                  {languages[selectedLanguage].Downloads}
-                </Dropdown.Toggle>
-                <Dropdown.Menu>
-                  <Dropdown.Item href="../styles/lesson_plans/E&U_Elementary_School.pdf" download>Elementary School</Dropdown.Item>
-                  <Dropdown.Item href="../styles/lesson_plans/E&U_Middle_School.pdf" download>Middle School</Dropdown.Item>
-                  <Dropdown.Item href="../styles/lesson_plans/E&U_High_School.pdf" download>High School</Dropdown.Item>
-                </Dropdown.Menu>
-              </Dropdown>
-              {Object.keys(languages).map(lang => selectedLanguage !== lang && renderLanguageLink(lang))} {/* render alternate language */}
+              {currentOptions.map(option => option)}
+              <Dropdown.Menu className="language-switcher d-inline-block">
+                {Object.keys(languages).map(lang => selectedLanguage !== lang && renderLanguageLink(lang))}
+              </Dropdown.Menu>
             </Dropdown.Menu>
           </Dropdown>
         </div>
 
         <div className="d-none d-md-inline-block">
-          <a className={`Activities d-inline-block`} href="/game">{languages[selectedLanguage].Activities}</a>
-          <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>
-          <Dropdown className="Downloads d-inline-block">
-            <Dropdown.Toggle>{languages[selectedLanguage].Downloads}</Dropdown.Toggle>
-            <Dropdown.Menu>
-              <Dropdown.Item href="../styles/lesson_plans/E&U_Elementary_School.pdf" download>Elementary School</Dropdown.Item>
-              <Dropdown.Item href="../styles/lesson_plans/E&U_Middle_School.pdf" download>Middle School</Dropdown.Item>
-              <Dropdown.Item href="../styles/lesson_plans/E&U_High_School.pdf" download>High School</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          {currentOptions.map(option => option)}
           <div className="language-switcher d-inline-block">
             {Object.keys(languages).map(renderLanguageLink)}
           </div>
@@ -80,6 +81,6 @@ const Navbar = ({onLanguageChange}) => {
       </div>
     </header>
   );
-}
+};
 
 export default Navbar;

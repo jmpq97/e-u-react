@@ -4,6 +4,7 @@ import '../styles/activities.css';
 const Game = ({ selectedLanguage }) => {
   return (
     <div className="game-background">
+      <div className="top-section"></div>
       <div className="custom-container mt-5">
         <div className="custom-embed">
           <iframe
@@ -12,7 +13,9 @@ const Game = ({ selectedLanguage }) => {
             src="https://itch.io/embed-upload/8693125?color=333333"
             allowfullscreen=""
             width="1280"
-            height="720">
+            height="720"
+            className="game-iframe"
+            >
             <a href="https://jicortez.itch.io/testhtml">Play Test on itch.io</a>
           </iframe>        </div>
       </div>

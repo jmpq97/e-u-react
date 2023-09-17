@@ -16,7 +16,7 @@ const Footer = () => (
             <a href="/about-us">About Us</a>
             <a href="/faq">FAQ</a>
             <a href="/game">Game</a>
-            <a href="/Meet">The Team</a>
+            <a href="/meet">The Team</a>
         </div>
         <div className="social-media-footer">
             <a href="https://www.facebook.com/utrgv.cecs/" target="_blank" rel="noopener noreferrer">

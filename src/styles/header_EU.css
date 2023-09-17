@@ -86,8 +86,30 @@
   /* Second item */
 }
 
+.Downloads, .Home {
+  margin-right: 24px; /* Adjust to suit */
+  order: 3; /* Adjust the order as per your preference */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white; /* Keeping the color consistent with other items */
+  font-weight: bold;
+  border: none; /* Removing any border */
+  background-color: transparent; /* Ensuring the background is transparent */
+  box-shadow: none; /* Removing any box shadow */
+  padding: 0; /* Adjust padding if necessary */
+}
+
+.Downloads:hover {
+  text-decoration: none;
+  color: rgb(17, 150, 12);
+}
+
 a.FAQ,
-a.Activities {
+a.Activities,
+a.Downloads,
+a.Home {
   text-decoration: none;
 }
 
@@ -292,7 +314,8 @@ a.FAQ:hover {
 
   .Activities,
   .FAQ,
-  .language-switcher {
+  .language-switcher,
+  .Downloads {
     margin: 6px;
     padding: 0px 0px;
   }

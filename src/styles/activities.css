@@ -1,24 +1,23 @@
 .meet-section {
     background-image: url('images/website-background.jpg');
-    background-size: cover; /* makes sure the image covers the entire element */
-    background-repeat: no-repeat; /* prevents image from repeating */
-    background-attachment: fixed; /* ensures the background stays fixed with regard to the viewport */
-    background-position: center center; /* centers the image */
-    height: 100%; /* takes the full height */
-    margin: 0; /* remove default margin */
-    overflow: hidden; /* hides any overflow */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Keeping this as hidden */
 }
 
-/* Add this class to your CSS file */
 .game-background {
     background-image: url('images/website-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height: 100vh;
+    height: 120vh; /* Adjust this as necessary */
     margin: 0;
-    overflow: hidden;
+    overflow: auto; /* This will allow for scrolling */
 }
 
 .custom-container {
@@ -50,6 +49,7 @@
     padding: 351px;
     padding-left: 930px;
 }
+
 
 .custom-embed iframe {
     position: absolute;

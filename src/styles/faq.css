@@ -1,29 +1,57 @@
-.faq-container {
-    padding: 20px;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+.top-section {
+    background: center / cover url("images/website-background.jpg") no-repeat;
+    height: 105px; /* Adjust the height as necessary */
+    margin-bottom: 0px; /* Adds some space between the top section and the carousel */
 }
 
-.faq-question {
-    font-size: 24px;
-    font-weight: bold;
+
+.faq-section {
+    background-color: rgba(184, 185, 181, 0.19); 
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0; 
+    padding: 0; /* Updated from 2rem to 0 */
+    border-radius: 15px; 
     margin-bottom: 10px;
 }
 
+.faq-header {
+    background-color: #fff; /* White background color */
+    padding: 15px; /* Adding some padding to create space around the text */
+    border-radius: 5px; /* Optional: rounded corners */
+    margin-bottom: 15px; /* Adding some space between the FAQ items */
+}
+
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 650px; /* Adjust this value as necessary */
+    object-fit: cover; /* This will crop a bit of the image but maintain the aspect ratio */
+}
+
+
+.faq-question {
+    font-size: 24px; /* Assigning a readable font size */
+    color: var(--primary-color); /* Using your primary color variable for consistency */
+    margin-bottom: 15px; /* Adding a bottom margin for better separation between questions */
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.faq-item {
+    padding: 0 60px;
+}
+
+
 .faq-answer {
-    font-size: 16px;
-    margin-bottom: 20px;
+    font-size: 18px; /* Keeping the answer font size slightly smaller than the question for a visual hierarchy */
+    line-height: 1.5; /* Making the text more readable with a line height */
 }
 
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 79.5vh;
+.faq-section a {
+    color: var(--secondary-color); /* Applying your secondary color to the links for consistency */
+    text-decoration: none; /* Removing underline from links */
 }
 
-#myCarousel {
-    width: 593.5px;
-    height: 393px;
+.faq-section a:hover {
+    text-decoration: underline; /* Adding underline on hover for better UX */
 }
