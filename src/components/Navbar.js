@@ -6,8 +6,8 @@ const Navbar = ({onLanguageChange}) => {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const languages = {
-    en: { Activities: 'Activities', FAQ: 'FAQ', label: 'ENG' },
-    es: { Activities: 'Actividades', FAQ: 'Preguntas Frecuentes', label: 'ESP' },
+    en: { Activities: 'Activities', FAQ: 'FAQ', Downloads: 'Downloads', label: 'ENG' },
+    es: { Activities: 'Actividades', FAQ: 'Preguntas Frecuentes', Downloads: 'Descargas', label: 'ESP' },
   };
 
   const handleLanguageClick = (event) => {
@@ -47,6 +47,16 @@ const Navbar = ({onLanguageChange}) => {
             <Dropdown.Menu>
               <Dropdown.Item href="/game">{languages[selectedLanguage].Activities}</Dropdown.Item>
               <Dropdown.Item href="/faq">{languages[selectedLanguage].FAQ}</Dropdown.Item>
+              <Dropdown>
+                <Dropdown.Toggle as={Dropdown.Item} id="dropdown-downloads">
+                  {languages[selectedLanguage].Downloads}
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item href="../styles/lesson_plans/E&U_Elementary_School.pdf" download>Elementary School</Dropdown.Item>
+                  <Dropdown.Item href="../styles/lesson_plans/E&U_Middle_School.pdf" download>Middle School</Dropdown.Item>
+                  <Dropdown.Item href="../styles/lesson_plans/E&U_High_School.pdf" download>High School</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
               {Object.keys(languages).map(lang => selectedLanguage !== lang && renderLanguageLink(lang))} {/* render alternate language */}
             </Dropdown.Menu>
           </Dropdown>
@@ -55,6 +65,14 @@ const Navbar = ({onLanguageChange}) => {
         <div className="d-none d-md-inline-block">
           <a className={`Activities d-inline-block`} href="/game">{languages[selectedLanguage].Activities}</a>
           <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>
+          <Dropdown className="Downloads d-inline-block">
+            <Dropdown.Toggle>{languages[selectedLanguage].Downloads}</Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item href="../styles/lesson_plans/E&U_Elementary_School.pdf" download>Elementary School</Dropdown.Item>
+              <Dropdown.Item href="../styles/lesson_plans/E&U_Middle_School.pdf" download>Middle School</Dropdown.Item>
+              <Dropdown.Item href="../styles/lesson_plans/E&U_High_School.pdf" download>High School</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
           <div className="language-switcher d-inline-block">
             {Object.keys(languages).map(renderLanguageLink)}
           </div>

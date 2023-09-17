@@ -17,7 +17,7 @@ const Meet = () => {
   const teamMembers = [
     { caricature: lozanoImage, real: 'path/to/real1.jpg', name: 'Dr. Karen Lozano' },
     { caricature: PadillaImage, real: 'path/to/real2.jpg', name: 'Dr. Padilla' },
-    { caricature: YorchImage, real: 'path/to/real2.jpg', name: 'Jorge' },
+    { caricature: YorchImage, real: 'path/to/real2.jpg', name: 'Dr. Marquez' },
     { caricature: JesseImage, real: 'path/to/real2.jpg', name: 'Jesse' },
     { caricature: GregImage, real: 'path/to/real2.jpg', name: 'Greg' },
   ];
