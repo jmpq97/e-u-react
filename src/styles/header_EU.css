@@ -87,18 +87,18 @@
 }
 
 .Downloads, .Home {
-  margin-right: 24px; /* Adjust to suit */
-  order: 3; /* Adjust the order as per your preference */
+  margin-right: 24px;
+  order: 3; 
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  color: white; /* Keeping the color consistent with other items */
+  color: white; 
   font-weight: bold;
-  border: none; /* Removing any border */
-  background-color: transparent; /* Ensuring the background is transparent */
-  box-shadow: none; /* Removing any box shadow */
-  padding: 0; /* Adjust padding if necessary */
+  border: none; 
+  background-color: transparent; 
+  box-shadow: none; 
+  padding: 0; 
 }
 
 .Downloads:hover {
@@ -148,7 +148,7 @@ a.FAQ:hover {
 .news-content {
   flex: 1;
   width: 100%;
-  padding: 0 5px; /* You can adjust the left and right padding here */
+  padding: 0 5px;
 }
 
 
@@ -191,25 +191,23 @@ a.FAQ:hover {
 
 @media (max-width: 936px) {
 
-  /* Hide the logo */
+  
   .rotate-center {
     display: none;
   }
 
-  /* Display 'Energy & U' title and adjust its styling */
+  
   .middleTitle {
     display: block;
     margin-bottom: 9px;
     font-size: 35px;
   }
 
-  /* Adjust the header for iPhone screens */
   .header_EU {
     height: 38px;
     top: 0;
   }
 
-  /* Group FAQ, Activities, and language-switcher into a dropdown */
   .right-section-EU {
     position: relative;
     margin-right: 0px;
@@ -219,7 +217,6 @@ a.FAQ:hover {
     display: block;
     position: absolute;
     right: -7.5px;
-    /*background-color: rgba(216, 186, 93, 0.422)*/;
   }
 
   .dropdown-content {
@@ -287,7 +284,6 @@ a.FAQ:hover {
     padding: 0px 10px;
   }
 
-  /* Green Dropdown Button Styles */
   .green-dropdown-btn {
     background-color: #4CAF50;
     border: none;
@@ -296,14 +292,12 @@ a.FAQ:hover {
     transition: background-color 0.3s;
   }
 
-  /* Hover effect */
   .green-dropdown-btn:hover,
   .green-dropdown-btn:focus {
     background-color: #45a049;
     text-decoration: none;
   }
 
-  /* Just to ensure the chevron (icon) and the text have a bit of space */
   .green-dropdown-btn i {
     margin-left: 5px;
   }
@@ -321,9 +315,6 @@ a.FAQ:hover {
   }
 }
 
-/* Your other styles remain unchanged... */
-
-/* These are the new or modified media queries: */
 @media (max-width: 815px) {
   .dropdown {
     display: block;

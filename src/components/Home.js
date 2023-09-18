@@ -125,7 +125,7 @@ const Home = ({ selectedLanguage }) => {
                         <div className="subtext">{t.subtext}</div>
                         <div className="button_container d-flex justify-content-center align-items-center mt-3">
                             <div className="heartbeat">
-                                <a className="btn btn-link first-link" href="E_U_2.html">{t.experimentsButton}</a>
+                                <a className="btn btn-link first-link" href="/game">{t.experimentsButton}</a>
                             </div>
                         </div>
                     </div>

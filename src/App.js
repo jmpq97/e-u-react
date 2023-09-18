@@ -38,7 +38,7 @@ function App() {
             {/* Add other routes as needed */}
           </Routes>
         </main>
-        <Footer /> {/* Use the new component here */}
+        <Footer />
       </div>
     </Router>
   );

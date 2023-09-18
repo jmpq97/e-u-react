@@ -13,7 +13,7 @@ const Footer = () => (
             </a>
         </div>
         <div className="navigation-links">
-            <a href="/about-us">About Us</a>
+            <a href="/">About Us</a>
             <a href="/faq">FAQ</a>
             <a href="/game">Game</a>
             <a href="/meet">The Team</a>

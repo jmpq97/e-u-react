@@ -1,38 +1,38 @@
 .top-section {
     background: center / cover url("images/website-background.jpg") no-repeat;
-    height: 105px; /* Adjust the height as necessary */
-    margin-bottom: 0px; /* Adds some space between the top section and the carousel */
+    height: 105px;
+    margin-bottom: 0px;
 }
 
 
 .faq-section {
-    background-color: rgba(184, 185, 181, 0.19); 
-    font-family: 'Montserrat', sans-serif; 
-    margin: 0; 
-    padding: 0; /* Updated from 2rem to 0 */
-    border-radius: 15px; 
+    background-color: rgba(184, 185, 181, 0.19);
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
     margin-bottom: 10px;
 }
 
 .faq-header {
-    background-color: #fff; /* White background color */
-    padding: 15px; /* Adding some padding to create space around the text */
-    border-radius: 5px; /* Optional: rounded corners */
-    margin-bottom: 15px; /* Adding some space between the FAQ items */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 
 .carousel-inner img {
     width: 100%;
-    max-height: 650px; /* Adjust this value as necessary */
-    object-fit: cover; /* This will crop a bit of the image but maintain the aspect ratio */
+    max-height: 450px;
+    object-fit: cover;
 }
 
 
 .faq-question {
-    font-size: 24px; /* Assigning a readable font size */
-    color: var(--primary-color); /* Using your primary color variable for consistency */
-    margin-bottom: 15px; /* Adding a bottom margin for better separation between questions */
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
     margin-top: 25px;
     font-weight: bold;
 }
@@ -43,15 +43,15 @@
 
 
 .faq-answer {
-    font-size: 18px; /* Keeping the answer font size slightly smaller than the question for a visual hierarchy */
-    line-height: 1.5; /* Making the text more readable with a line height */
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 .faq-section a {
-    color: var(--secondary-color); /* Applying your secondary color to the links for consistency */
-    text-decoration: none; /* Removing underline from links */
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .faq-section a:hover {
-    text-decoration: underline; /* Adding underline on hover for better UX */
+    text-decoration: underline;
 }

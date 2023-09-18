@@ -6,7 +6,7 @@
     background-position: center center;
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Keeping this as hidden */
+    overflow: hidden;
 }
 
 .game-background {
@@ -15,9 +15,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height: 120vh; /* Adjust this as necessary */
+    height: 120vh;
     margin: 0;
-    overflow: auto; /* This will allow for scrolling */
+    overflow: auto;
 }
 
 .custom-container {
