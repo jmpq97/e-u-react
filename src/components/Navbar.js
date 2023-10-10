@@ -34,18 +34,27 @@ const Navbar = ({ onLanguageChange }) => {
     '/game': { en: 'Games', es: 'Juegos' },
     '/faq': { en: 'FAQ', es: 'Preguntas Frecuentes' },
     '/meet': { en: 'Meet the team!', es: '¡Conócenos!' },
+    '/lesson-plans': { en: 'Lesson Plans', es: 'Planes de Lectura' },
+
   };
 
   const location = useLocation();
 
   const navOptions = {
-    '/': [<a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
-    '/game': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
-    '/faq': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>],
-    '/meet': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+    '/': [<a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson-plans">{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+    '/game': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Downloads d-inline-block" href="/lesson-plans">{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+    '/faq': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson-plans">{languages[selectedLanguage].Downloads}</a>],
+    '/meet': [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson-plans">{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>],
+    '/lesson-plans': [
+      <a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>,
+      <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>,
+      <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>,
+      // Other links as necessary...
+  ],
+  
   };
 
-  const currentOptions = navOptions[location.pathname] || [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson_plans/Lesson_Plans.zip" download>{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>];
+  const currentOptions = navOptions[location.pathname] || [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson-plans">{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>];
 
   return (
     <header className="header_EU">
