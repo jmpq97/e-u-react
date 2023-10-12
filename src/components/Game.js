@@ -7,17 +7,8 @@ const Game = ({ selectedLanguage }) => {
       <div className="top-section"></div>
       <div className="custom-container mt-5">
         <div className="custom-embed">
-          <iframe
-            title="Game Frame"
-            frameborder="0"
-            src="https://itch.io/embed-upload/8693125?color=333333"
-            allowfullscreen=""
-            width="1280"
-            height="720"
-            className="game-iframe"
-            >
-            <a href="https://jicortez.itch.io/testhtml">Play Test on itch.io</a>
-          </iframe>        </div>
+          <iframe frameborder="0" src="https://itch.io/embed-upload/8881342?color=333333" allowfullscreen="" width="960" height="560"><a href="https://jicortez.itch.io/testhtml">Play Test on itch.io</a></iframe>
+        </div>
       </div>
     </div>
   );

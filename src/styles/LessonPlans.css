@@ -1,8 +1,33 @@
 .lesson-plans-container {
+    background: url('../styles/images/website-background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
-    font-family: 'Your Font Here', sans-serif;  /* Modify as per your design */
-    padding-top: 100px; /* Adjust this value according to the height of your navbar */
+    font-family: Roboto, Arial;
+    padding-top: 200px;
+
 }
+
+.section-divider {
+    background-color: white; /* adjust to the background color of the top section */
+    height: 40px; /* adjust based on how pronounced you want the zig-zag to be */
+    clip-path: polygon(
+        0% 100%,
+        10% 0%,
+        20% 100%,
+        30% 0%,
+        40% 100%,
+        50% 0%,
+        60% 100%,
+        70% 0%,
+        80% 100%,
+        90% 0%,
+        100% 100%
+    );
+}
+
 
 .lesson-header {
     background: url('../styles/images/website-background.jpg') no-repeat center center fixed; 
@@ -19,6 +44,8 @@
 .lesson-content {
     background-color: #FFFFFF;
     padding: 20px 0;
+    /* Shadow Properties */
+    box-shadow: inset -1px 0px 10px 0px rgba(0, 0, 0, 1.5)
 }
 
 .grade-section {

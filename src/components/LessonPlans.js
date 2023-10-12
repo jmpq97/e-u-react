@@ -9,13 +9,6 @@ import High_School from '../styles/images/lesson_plans/High_School.jpg';
 const LessonPlans = () => {
     return (
         <div className="lesson-plans-container">
-            
-            {/* Header Section with the Background */}
-            <header className="lesson-header">
-                <h1>LESSON PLANS</h1>
-            </header>
-            
-            {/* Main Content Section with White Background */}
             <div className="lesson-content">
                 <section className="grade-section">
                     <img src={Elem_School} alt="Elementary illustration" />
@@ -35,11 +28,6 @@ const LessonPlans = () => {
                     <a href="/path/to/high-school-plan.docx" download>Download</a>
                 </section>
             </div>
-
-            {/* Footer */}
-            <footer>
-                {/* Your footer code, perhaps reuse your main footer component */}
-            </footer>
         </div>
     );
 };

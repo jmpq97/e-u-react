@@ -17,14 +17,17 @@
     background-position: center center;
     height: 120vh;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: auto;
 }
 
 .custom-container {
     max-width: 1310px;
     margin: 0 auto;
-    padding: 1rem;
-    margin-top: 8%;
+    padding: 3rem;
+    text-align: center;
 }
 
 .custom-row {
@@ -39,15 +42,12 @@
 
 .custom-embed {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+    width: 960px; /* width of your iframe */
+    padding-bottom: 56.25%; /* aspect ratio for 16:9, you can adjust if you know your game's ratio */
+    margin: 0 auto; /* center the embed on the page */
     background: #333;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    padding: 351px;
-    padding-left: 930px;
 }
 
 
@@ -55,8 +55,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 1280px;
-    height: 720px;
+    width: 100%; /* this will make it responsive */
+    height: 100%; /* this will make it responsive */
     border: 0;
 }
 
