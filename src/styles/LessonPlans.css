@@ -10,6 +10,11 @@
 
 }
 
+p {
+    white-space: pre-line;
+  }
+  
+
 .section-divider {
     background-color: white; /* adjust to the background color of the top section */
     height: 40px; /* adjust based on how pronounced you want the zig-zag to be */
@@ -57,7 +62,7 @@
 }
 
 .grade-section img {
-    width: 200px;
+    width: 300px;
     height: auto;
     margin-bottom: 10px;
 }
