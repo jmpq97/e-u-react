@@ -21,7 +21,7 @@ const LessonPlans = () => {
                         {'\n'}
                         Get ready for a journey where you'll see, feel, and experience energy like never before
                         </p>
-                    <a href="/public/lesson_plans/1_E&U_Elementary_School.pdf" download>Download</a>
+                    <a href="/lesson_plans/E&U_Elementary_School.pdf" download>Download</a>
                 </section>
 
                 <section className="grade-section">
@@ -35,7 +35,7 @@ const LessonPlans = () => {
                         {'\n'}
                         Plus, get a deeper grasp of matter and its properties, all while having fun! Let's unlock the power of energy together!
                         </p>
-                    <a href="/path/to/middle-school-plan.docx" download>Download</a>
+                    <a href="/lesson_plans/E&U_Middle School.pdf" download>Download</a>
                 </section>
 
                 <section className="grade-section">
@@ -51,7 +51,7 @@ const LessonPlans = () => {
                         {'\n'}
                         offers a comprehensive understanding tailored for the mature minds. Dive in and illuminate the universe of energy with us!
                         </p>
-                    <a href="/path/to/high-school-plan.docx" download>Download</a>
+                    <a href="/lesson_plans/E&U_High_School.pdf" download>Download</a>
                 </section>
             </div>
         </div>

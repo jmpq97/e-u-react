@@ -50,8 +50,8 @@ const Navbar = ({ onLanguageChange }) => {
       <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>,
       <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>,
       // Other links as necessary...
-  ],
-  
+    ],
+
   };
 
   const currentOptions = navOptions[location.pathname] || [<a className="Home d-inline-block" href="/">{languages[selectedLanguage].Home}</a>, <a className="Activities d-inline-block" href="/game">{languages[selectedLanguage].Activities}</a>, <a className="Downloads d-inline-block" href="/lesson-plans">{languages[selectedLanguage].Downloads}</a>, <a className="FAQ d-inline-block" href="/faq">{languages[selectedLanguage].FAQ}</a>];
@@ -72,11 +72,13 @@ const Navbar = ({ onLanguageChange }) => {
             <Dropdown.Toggle className="btn green-dropdown-btn responsive-dropdown-btn" id="dropdownMenuButton">
               Menu <i className="fas fa-chevron-down"></i>
             </Dropdown.Toggle>
+
             <Dropdown.Menu>
-              {currentOptions.map(option => option)}
-              <Dropdown.Menu className="language-switcher d-inline-block">
-                {Object.keys(languages).map(lang => selectedLanguage !== lang && renderLanguageLink(lang))}
-              </Dropdown.Menu>
+              {currentOptions.map((option, index) => (
+                <Dropdown.Item key={index} as="span">
+                  {option}
+                </Dropdown.Item>
+              ))}
             </Dropdown.Menu>
           </Dropdown>
         </div>

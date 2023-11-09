@@ -11,7 +11,14 @@
 /* ======================
  Base Styles
 ====================== */
-body, p, h1, h2, h3, h4, h5, h6,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 .other-text {
   font-family: var(--primary-font);
 }
@@ -210,7 +217,6 @@ a.first-link:active {
 }
 
 .bottomTwo {
-  height: 85vh;
   background-color: rgba(184, 185, 181, 0.19);
 }
 
@@ -385,9 +391,6 @@ a.first-link:active {
     font-size: medium;
   }
 
-  .bottomTwo {
-    height: 60vh;
-  }
 
   .button_container {
     top: 260px;
@@ -435,6 +438,39 @@ a.first-link:active {
     font-size: 16px;
   }
 }
+
+/* To Fix middle section only */
+@media (max-width: 667px) {
+  .bottomTwo {
+    /* Styles for width 667px and below */
+    height: 86vh;
+  }
+}
+
+/* For devices with width between 668px and 767px */
+@media (min-width: 668px) and (max-width: 767px) {
+  .bottomTwo {
+    /* Styles for width between 668px and 767px */
+    height: 85vh; /* This was not in your provided CSS, just an example */
+  }
+}
+
+/* For devices with width between 768px and 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .bottomTwo {
+    /* Styles for width between 768px and 1200px */
+    height: 60vh;
+  }
+}
+
+/* For devices with width above 1200px */
+@media (min-width: 1201px) {
+  .bottomTwo {
+    /* Styles for width above 1200px */
+    height: 85vh; /* Or whatever you want it to be */
+  }
+}
+
 
 @media (max-width: 480px) {
   .lozano {

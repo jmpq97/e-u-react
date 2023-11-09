@@ -338,3 +338,24 @@ a.FAQ:hover {
     display: inline-block !important;
   }
 }
+
+/*This section is to fix the dropdown issue*/
+
+@media (max-width: 768px) {
+  .dropdown-item {
+    color: black;
+  }
+
+  .dropdown-item:hover, .dropdown-item:focus {
+    color: white;
+    background-color: #007bff;
+  }
+
+  .language-link, .Activities, .Downloads, .FAQ, .Home {
+    color: black !important;
+  }
+
+  .header_EU .dropdown-menu .dropdown-item {
+    color: black !important;
+  }
+}
