@@ -5,14 +5,14 @@ import Xword from '../styles/images/lesson_plans/Crossword.png';
 import Xgrama from '../styles/images/lesson_plans/Crucigrama.png';
 import Labyrinth from '../styles/images/lesson_plans/Labyrinth.png';
 import Laberinto from '../styles/images/lesson_plans/Laberinto.png';
-import WSearch from '../styles/images/lesson_plans/Word Search.png';
-import Sopa from '../styles/images/lesson_plans/Sopa de Letras.png';
-import Connect from '../styles/images/lesson_plans/Connect the dots.png';
-import Conectar from '../styles/images/lesson_plans/Une los Puntos.png';
-import Coloring from '../styles/images/lesson_plans/Coloring Pages.png';
+import WSearch from '../styles/images/lesson_plans/Word_Search.png';
+import Sopa from '../styles/images/lesson_plans/Sopa_de_Letras.png';
+import Connect from '../styles/images/lesson_plans/connect_the_dots.png';
+import Conectar from '../styles/images/lesson_plans/Une_los_Puntos.png';
+import Coloring from '../styles/images/lesson_plans/coloring_pages.png';
 import Colorear from '../styles/images/lesson_plans/colorear.png';
 import diy from '../styles/images/lesson_plans/DIY.png';
-import htm from '../styles/images/lesson_plans/Hazlo Tú Mismo.png';
+import htm from '../styles/images/lesson_plans/hazlo_tu.png';
 
 
 // Here you can add your activity texts, similar to the lesson plan texts

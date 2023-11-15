@@ -19,7 +19,7 @@ const texts = {
             description: "Uncover the mysteries of energy and its wonders. Discover what energy truly means for scientists and engineers through hands-on experiments. Dive into the world of thermodynamics, explore different forms of energy, and see the magic behind force, motion, and Newton's laws. Plus, get a deeper grasp of matter and its properties, all while having fun! Let's unlock the power of energy together!",
             download: "Download",
             imageAlt: "Middle illustration",
-            pdfLink: "/lesson_plans/E&U_Middle School.pdf"
+            pdfLink: "/lesson_plans/E&U_Middle_School.pdf"
         },
         high: {
             title: "📚 Embark on an advanced exploration with 'Energy & U' for high school! 📚",
@@ -42,7 +42,7 @@ const texts = {
             description: "Descubre los misterios de la energía y sus maravillas. Aprende qué significa realmente la energía para los científicos e ingenieros a través de experimentos prácticos. Sumérgete en el mundo de la termodinámica, explora las diferentes formas de energía y observa la magia detrás de la fuerza, el movimiento y las leyes de Newton. Además, profundiza en la comprensión de la materia y sus propiedades, ¡todo mientras te diviertes! ¡Desbloqueemos juntos el poder de la energía!",
             download: "Descargar",
             imageAlt: "Ilustración nivel medio",
-            pdfLink: "/lesson_plans/E&U_Middle School.pdf"
+            pdfLink: "/lesson_plans/E&U_Middle_School.pdf"
         },
         high: {
             title: "📚 Embarca en una exploración avanzada con 'Energy & U' para la preparatoria! 📚",
