@@ -8,7 +8,7 @@ import Game from './components/Game';
 import FAQ from './components/FAQ';
 import Homework from './components/Homework';
 import Footer from './components/Footer';
-import LessonPlans from './components/LessonPlans';
+import EducationalContent from './components/EducationalContent';
 
 // Import images
 import './styles/stylesheet.css';
@@ -36,7 +36,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/homework" element={<Homework />} />
             <Route path="/meet" element={<Meet />} />
-            <Route path="/lesson-plans" element={<LessonPlans />} />
+            <Route path="/lesson-plans" element={<EducationalContent selectedLanguage={selectedLanguage} />} />
             {/* Add other routes as needed */}
           </Routes>
         </main>

@@ -8,7 +8,7 @@ const Navbar = ({ onLanguageChange }) => {
 
   const languages = {
     en: { Home: 'Home', Activities: 'Games', FAQ: 'FAQ', Downloads: 'Downloads', Meet: 'Meet', label: 'ENG' },
-    es: { Home: 'Inicio', Activities: 'Juegos', FAQ: 'Preguntas Frecuentes', Downloads: 'Descargas', Meet: 'Encuentro', label: 'ESP' },
+    es: { Home: 'Inicio', Activities: 'Juegos', FAQ: 'Preguntas', Downloads: 'Descargas', Meet: 'Encuentro', label: 'ESP' },
   };
 
   const handleLanguageClick = (event) => {
@@ -33,8 +33,8 @@ const Navbar = ({ onLanguageChange }) => {
     '/': { en: 'Energy & U', es: 'Energy & U' },
     '/game': { en: 'Games', es: 'Juegos' },
     '/faq': { en: 'FAQ', es: 'Preguntas Frecuentes' },
-    '/meet': { en: 'Meet the team!', es: '¡Conócenos!' },
-    '/lesson-plans': { en: 'Lesson Plans', es: 'Planes de Lectura' },
+    '/meet': { en: 'Our team', es: 'Nuestro equipo' },
+    '/lesson-plans': { en: 'Downloads', es: 'Descargas' },
 
   };
 

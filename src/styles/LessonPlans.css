@@ -1,86 +1,170 @@
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: flex-start; Align tabs to the left */
+    padding-left: 20px; /* Spacing from the left edge */
+    margin-top: -20px; /* Adjust as necessary */
+    font-family: var(--secondary-font);
+    color: #FFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tab-button {
+    color: #FFF;
+    border: none;
+    background-color: #3e3d3d92;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tab-button:hover {
+    color: #000000;
+    background-color: #f0f0f0; /* Light grey on hover */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tab-button.active {
+    background-color: rgb(8, 154, 30);;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-weight: bold;
+}
+
+
 .lesson-plans-container {
     background: url('../styles/images/website-background.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    font-family: Roboto, Arial;
-    padding-top: 200px;
-
+    font-family: 'Roboto', Arial, sans-serif;
+    padding-top: 190px;
 }
-
-p {
-    white-space: pre-line;
-  }
-  
 
 .section-divider {
-    background-color: white; /* adjust to the background color of the top section */
-    height: 40px; /* adjust based on how pronounced you want the zig-zag to be */
-    clip-path: polygon(
-        0% 100%,
-        10% 0%,
-        20% 100%,
-        30% 0%,
-        40% 100%,
-        50% 0%,
-        60% 100%,
-        70% 0%,
-        80% 100%,
-        90% 0%,
-        100% 100%
-    );
+    background-color: white;
+    height: 40px;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
 
-
 .lesson-header {
-    background: url('../styles/images/website-background.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 300px; /* Adjust based on how much of the background you want to show */
+    height: 300px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    color: #FFF; /* Assuming white text */
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
 }
 
 .lesson-content {
     background-color: #FFFFFF;
-    padding: 20px 0;
-    /* Shadow Properties */
-    box-shadow: inset -1px 0px 10px 0px rgba(0, 0, 0, 1.5)
+    padding: 40px 20px; /* More vertical padding for breathing room */
+    box-shadow: 1px 4px 20px rgb(0, 0, 0); /* Softer shadow for inset effect */
 }
 
+
 .grade-section {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 40px auto; /* More vertical margin for separation, auto for horizontal centering */
+    max-width: 800px; /* Max width for better reading on larger screens */
+    text-align: center;
+}
+
+.activity-section {
+    margin: 40px auto; /* More vertical margin for separation, auto for horizontal centering */
+    max-width: 800px; /* Max width for better reading on larger screens */
+    text-align: center;
 }
 
 .grade-section img {
-    width: 300px;
+    max-width: 50%; /* Responsive image */
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* More space between image and text */
+}
+
+.activities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will distribute space around the items */
+    gap: 20px; /* This adds space between the columns and rows */
+}
+
+.activity-section {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.activity-section img {
+    max-width: 50%; /* Responsive image */
+    height: auto;
+    margin-bottom: 20px; /* More space between image and text */
+}
+
+.activity-section div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.activity-section a {
+    margin-top: 10px; /* Space between text and button */
 }
 
 .grade-section p {
-    text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* More space above the download link */
+    line-height: 1.6; /* Improved line height for reading */
+    color: #444; /* Slightly darker color for text */
 }
 
-.grade-section a {
-    background-color: #FFD700;  /* Gold color, change as needed */
-    padding: 10px 20px;
+.grade-section a, .activity-section a {
+    background-color: #FFD700; /* Gold color */
+    color: #FFF; /* White text for contrast */
+    padding: 15px 30px; /* Larger padding for a larger button */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
     text-decoration: none;
-    color: black;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    font-family: var(--secondary-font);
 }
 
-.grade-section a:hover {
-    background-color: #FFC700;  /* Slightly darker gold on hover */
+.grade-section a:hover, .activity-section a:hover {
+    transform: translateY(-2px); /* Lift button on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for button on hover */
+    font-weight: bold;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+
+    .activity-section {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    .grade-section img {
+        max-width: 100%; /* Responsive image */
+    }
+
+    .grade-section {
+        flex-direction: column;
+    }
+
+    .lesson-content {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .lesson-plans-container {
+        padding-top: 100px;
+    }
+
+    /* Other responsive adjustments as needed */
 }
