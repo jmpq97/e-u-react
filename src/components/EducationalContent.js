@@ -3,7 +3,7 @@ import LessonPlans from './LessonPlans';
 import ActivitiesContent from './ActivitiesContent';
 
 const EducationalContent = ({ selectedLanguage }) => {
-  const [activeSection, setActiveSection] = useState('lessonPlans');
+  const [activeSection] = useState('lessonPlans');
 
   return (
     <div>
