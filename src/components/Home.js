@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 import { ReactComponent as ZigZagFrame } from '../styles/images/zig-zag.svg';
 
 
@@ -28,6 +29,23 @@ const NewsItem = ({ image, title, link, date, description }) => (
 );
 
 const Home = ({ selectedLanguage }) => {
+
+    useEffect(() => {
+        const videoElement = document.querySelector('.custom-video-player');
+        if (videoElement) {
+            videoElement.addEventListener('ended', () => {
+                videoElement.play();
+            });
+        }
+
+        return () => {
+            if (videoElement) {
+                videoElement.removeEventListener('ended', () => {
+                    videoElement.play();
+                });
+            }
+        };
+    }, []);
 
     if (!['en', 'es'].includes(selectedLanguage)) {
         selectedLanguage = 'en';
