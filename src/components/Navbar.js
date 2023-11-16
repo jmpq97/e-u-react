@@ -60,7 +60,9 @@ const Navbar = ({ onLanguageChange }) => {
     <header className="header_EU">
       <div className="col left-section-EU">
         <div className="containerLogo">
+        <a href="/" className="logo-link">
           <img className="rotate-center" src="images/energy-and-u-white.png" alt="Logo" />
+          </a>
         </div>
       </div>
       <div className="middle-section-header">

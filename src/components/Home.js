@@ -1,4 +1,6 @@
 import React from 'react';
+import { ReactComponent as ZigZagFrame } from '../styles/images/zig-zag.svg';
+
 
 import '../styles/stylesheet.css';
 import '../styles/header_EU.css';
@@ -69,8 +71,8 @@ const Home = ({ selectedLanguage }) => {
                     date: 'January 7, 2023',
                     description: 'The University of Texas Rio Grande Valley professor of mechanical engineering Karen Lozano and her team won a Lone Star Emmy on Nov. 12.',
                 },
-                
-                
+
+
             ],
         },
         es: {
@@ -130,7 +132,7 @@ const Home = ({ selectedLanguage }) => {
                         </div>
                     </div>
                 </main>
-    
+
                 <section className="row lozano-section">
                     <div className="col lozanoImg text-center">
                         <img className="lozano" src={lozanoImage} alt="Dr. Lozano" />
@@ -139,19 +141,21 @@ const Home = ({ selectedLanguage }) => {
                     </div>
                 </section>
             </div>
-    
-            <section className="container-fluid bottomTwo">
-                <div className="row justify-content-center">
-                    <div className="col text-center">
-                        <div className="titleBottom">{t.bottomTitle}</div>
-                        <div className="subtitleBottom">{t.bottomSubtitle}</div>
-                        <div className="embed-responsive-video embed-responsive-16by9 video-container-large">
-                            <iframe className="embed-responsive-item" src="https://www.youtube.com/embed/H2x6e8dBnO8?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                    </div>
+
+            <section className="video-text-section">
+                <div className="video-text-content">
+                    <h2 className="titleBottom">{t.bottomTitle}</h2>
+                    <p className="subtitleBottom">{t.bottomSubtitle}</p>
+                </div>
+                <div className="video-container">
+                    <ZigZagFrame className="video-frame" />
+                    <video className="custom-video-player" autoPlay loop muted>
+                        <source src={require('../styles/videos/E&U_website_loop.mp4')} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </section>
-    
+
             <section className="container-fluid news-stuff news-section">
                 <div className="row">
                     <div className="col text-center">
@@ -165,7 +169,7 @@ const Home = ({ selectedLanguage }) => {
                 </div>
             </section>
         </div>
-    );    
+    );
 }
 
 export default Home;

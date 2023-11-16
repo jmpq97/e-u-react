@@ -42,6 +42,10 @@ h6,
   width: 500px;
 }
 
+.BODY, html {
+  overflow-x: hidden; /* This will prevent horizontal scrolling */
+}
+
 /* ======================
  Lozano Section
 ====================== */
@@ -241,7 +245,7 @@ a.first-link:active {
   max-width: 1300px;
 }
 
-.video-container,
+
 .video-container-large {
   margin-left: auto;
   margin-right: auto;
@@ -257,6 +261,69 @@ a.first-link:active {
   width: 658px;
   height: 370px;
 }
+
+/* ======================
+ Video Sections
+====================== */
+
+.video-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-container {
+  width: 100%; /* Full width of the container */
+  padding-top: 30%; /* Smaller percentage decreases height; adjust as needed */
+  position: relative;
+}
+
+
+.video-frame {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  width: 100vw; /* Adjust if needed to match the video container width */
+  max-width: 100%; /* Ensure it doesn't exceed the width of the container */
+  height: auto; /* Maintain the SVG's aspect ratio */
+  z-index: 10; /* Above the video */
+  pointer-events: none; /* Clicks pass through to the video */
+  transform: translate(-50%, -50%); /* Center the SVG */
+}
+
+
+.video-text-section {
+  width: 100%;
+  /* Set a minimum height or padding based on your design */
+  min-height: 50vh;
+  /* Adjust to suit your design preference */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+}
+
+.video-text-content {
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f2f2f1;
+  color: white;
+  /* Adjust text color if necessary for contrast */
+  /* Other styling */
+}
+
+.custom-video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Video fills the width of the container */
+  height: 100%; /* Video fills the height, as defined by padding-top */
+  object-fit: cover; /* Ensures the video covers the entire area */
+}
+
+
 
 /* ======================
  News Sections
@@ -317,10 +384,7 @@ a.first-link:active {
 }
 
 @media (max-width: 1200px) {
-  .video-container {
-    width: 70%;
-    max-width: 900px;
-  }
+
 
   .news-item {
     flex-direction: column;
@@ -402,14 +466,32 @@ a.first-link:active {
     font-size: medium;
   }
 
-  .titleBottom,
+  .titleBottom {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+
   .titleBottomThree {
     font-size: 30px;
+    margin-top: 60px;
   }
 
   .subtitleBottom {
     font-size: 18px;
     max-width: 100%;
+  }
+
+  .custom-video-player {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-text-content {
+    padding: 10px 0;
+  }
+
+  .video-frame {
+    display:none
   }
 
   .video-container-large {
@@ -451,7 +533,8 @@ a.first-link:active {
 @media (min-width: 668px) and (max-width: 767px) {
   .bottomTwo {
     /* Styles for width between 668px and 767px */
-    height: 85vh; /* This was not in your provided CSS, just an example */
+    height: 85vh;
+    /* This was not in your provided CSS, just an example */
   }
 }
 
@@ -467,7 +550,8 @@ a.first-link:active {
 @media (min-width: 1201px) {
   .bottomTwo {
     /* Styles for width above 1200px */
-    height: 85vh; /* Or whatever you want it to be */
+    height: 85vh;
+    /* Or whatever you want it to be */
   }
 }
 
