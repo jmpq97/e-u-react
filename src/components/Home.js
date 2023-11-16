@@ -36,6 +36,7 @@ const Home = ({ selectedLanguage }) => {
             videoElement.addEventListener('ended', () => {
                 videoElement.play();
             });
+            videoElement.addEventListener('contextmenu', (e) => e.preventDefault()); // Prevent right-click on video
         }
 
         return () => {
@@ -43,6 +44,7 @@ const Home = ({ selectedLanguage }) => {
                 videoElement.removeEventListener('ended', () => {
                     videoElement.play();
                 });
+                videoElement.removeEventListener('contextmenu', (e) => e.preventDefault()); // Cleanup right-click prevention
             }
         };
     }, []);
@@ -167,12 +169,14 @@ const Home = ({ selectedLanguage }) => {
                 </div>
                 <div className="video-container">
                     <ZigZagFrame className="video-frame" />
+                    <div className="video-overlay"></div> {/* Transparent overlay */}
                     <video className="custom-video-player" autoPlay loop muted>
                         <source src={require('../styles/videos/E&U_website_loop.mp4')} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </section>
+
 
             <section className="container-fluid news-stuff news-section">
                 <div className="row">
