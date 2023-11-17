@@ -164,7 +164,7 @@ const Home = ({ selectedLanguage }) => {
 
             <section className="video-text-section">
                 <div className="video-text-content">
-                    <h2 className="titleBottom">{t.bottomTitle}</h2>
+                    <h3 className="titleBottom">{t.bottomTitle}</h3>
                     <p className="subtitleBottom">{t.bottomSubtitle}</p>
                 </div>
                 <div className="video-container">
