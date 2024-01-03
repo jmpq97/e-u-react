@@ -16,7 +16,7 @@ const texts = {
             pdfLink: "/lesson_plans/E&U_Elementary_School.pdf"
         },
         middle: {
-            title: "Lesson plans for ELEMENTARY SCHOOL Students",
+            title: "Lesson plans for MIDDLE SCHOOL Students",
             subtitle: "🔍 Journey with 'Energy & U' at the middle school level! 🔍",
             description: "Teachers, help your students uncover the mysteries of energy and its wonders. Your students will dive into the world of thermodynamics, explore different forms of energy, and see the magic behind force, motion, and Newton's laws. Plus, get a deeper grasp of matter and its properties, all while having fun!",
             download: "Download",
@@ -24,7 +24,7 @@ const texts = {
             pdfLink: "/lesson_plans/E&U_Middle_School.pdf"
         },
         high: {
-            title: "Lesson plans for ELEMENTARY SCHOOL Students",
+            title: "Lesson plans for HIGH SCHOOL Students",
             subtitle: "📚 Embark on an advanced exploration with 'Energy & U' for high school! 📚",
             description: "Teachers, help your students dive deeper into the intricacies of energy, from its foundational concepts to its real-world applications. Grasp the first law of Thermodynamics, delve into the diverse energy types, and experience firsthand the transformative power of energy through captivating onstage experiments. Whether it's biology's systems and interactions, chemistry's energy reactions, or the conservation principles in physics, this journey offers a comprehensive understanding tailored for mature minds. Dive in and illuminate the universe of energy with us!",
             download: "Download",

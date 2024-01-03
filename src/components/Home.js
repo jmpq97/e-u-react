@@ -150,7 +150,7 @@ const Home = ({ selectedLanguage }) => {
                                 <a className="btn btn-link first-link custom-button-size" href="/game">{t.experimentsButton}</a>
                             </div>
                             <div className="heartbeat">
-                                <a className="btn btn-link first-link custom-button-size" href="/lesson-plans">{t.activities}</a>
+                                <a className="btn btn-link first-link custom-button-size" href="/lesson-plans?tab=activities">{t.activities}</a>
                             </div>
                         </div>
                     </div>
