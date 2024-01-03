@@ -502,7 +502,7 @@ a.first-link:active {
   .button, .heartbeat {
     padding: 10px 20px;
     font-size: 16px;
-    width: 150px;
+    width: 164px;
     text-align: center;
   }
 
@@ -626,6 +626,7 @@ a.first-link:active {
 }
 
 @media (max-width: 480px) {
+  
   .lozano {
     left: 10px;
   }
