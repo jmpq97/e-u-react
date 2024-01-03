@@ -106,6 +106,10 @@
   color: rgb(17, 150, 12);
 }
 
+.Home:hover, a.Home:hover {
+  color: rgb(17, 150, 12); /* Or use var(--secondary-color) if you have it defined */
+}
+
 a.FAQ,
 a.Activities,
 a.Downloads,

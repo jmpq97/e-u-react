@@ -57,13 +57,13 @@ const Home = ({ selectedLanguage }) => {
         en: {
             headerTitle: "ENERGY & U",
             welcome: "Learn, Explore, Play!",
-            subtext: "Welcome to the Energy & U Activities website, Learn and discover anywhere you are",
+            subtext: "Welcome to the Energy & U Activities website",
             tooltip: "Click on the Experiments Button to Play & Learn",
             activities: "Activities",
             faq: "FAQ",
-            experimentsButton: "EXPERIMENTS",
-            bottomTitle: "What is Energy & U?",
-            bottomSubtitle: "Welcome to \"Energy and U!\" Brought to life by top minds from the University of Minnesota, and enriched with the generous support of the National Science Foundation, this program is ready to light up the Valley. A fun-filled exploration of energy for young learners, \"Energy and U\" is all about inspiring the next generation to care for our wonderful planet. It's time to power up your curiosity and spark our sense of responsibility. Join us in the adventure!",
+            experimentsButton: "GAMES",
+            bottomTitle: "Welcome to Energy and U!",
+            bottomSubtitle: "This show was brought to life by awesome scientists from the University of Minnesota, and further enriched by also awesome scientists from The University of Texas Rio Grande Valley through support from National Science Foundation. 'Energy and U' is all about inspiring the next generation to care for our wonderful planet. It's time to power up your curiosity and spark our sense of responsibility. Join us in the adventure!",
             newsTitle: "Energy and U Highlights",
             newsItems: [
 
@@ -86,7 +86,7 @@ const Home = ({ selectedLanguage }) => {
 
                 {
                     image: emmyImage,
-                    title: 'Energy & U receives the Rocky Mountain Emmy Award for Best Educational Program',
+                    title: 'Energy & U receives the Lone Star Emmy Award for Best Educational Program',
                     link: 'https://www.valleycentral.com/news/local-news/utrgv-engineering-professor-and-team-win-lone-star-emmy/',
                     date: 'January 7, 2023',
                     description: 'The University of Texas Rio Grande Valley professor of mechanical engineering Karen Lozano and her team won a Lone Star Emmy on Nov. 12.',
@@ -98,13 +98,13 @@ const Home = ({ selectedLanguage }) => {
         es: {
             headerTitle: "Energy & U",
             welcome: "Aprende, Explora, Juega!",
-            subtext: "Te damos la bienvenida al sitio oficial de Energy & U, Aprende y descubre desde tu hogar",
+            subtext: "Te damos la bienvenida al sitio oficial de Energy & U",
             tooltip: "Haga clic en el botón de Experimentos para Jugar y Aprender",
             activities: "Actividades",
             faq: "Preguntas frecuentes",
-            experimentsButton: "EXPERIMENTOS",
-            bottomTitle: "¿Qué es Energy & U?",
-            bottomSubtitle: "Te damos la bienvenida a \"Energy & U\". Creado por las destacadas mentes de la Universidad de Minnesota y enriquecido con el generoso apoyo de la Fundación Nacional de Ciencias, este programa está listo para iluminar el Valle. Una aventura llena de diversión en el mundo de la energía, \"Energy & U\" busca inspirar a las nuevas generaciones en el cuidado de nuestro preciado planeta. Llego el momento de impulsar tu curiosidad y despertar nuestra responsabilidad. ¡Únete a nosotros en esta emocionante aventura!",
+            experimentsButton: "JUEGOS",
+            bottomTitle: "¡Bienvenidos a Energy and U!",
+            bottomSubtitle: "Este espectáculo fue creado por increíbles científicos de la Universidad de Minnesota, y enriquecido aún más por también increíbles científicos de la Universidad de Texas del Valle del Río Grande con el apoyo de la Fundación Nacional de Ciencias. \"Energy and U\" se trata de inspirar a la próxima generación a cuidar de nuestro maravilloso planeta. Es hora de potenciar tu curiosidad y encender nuestro sentido de responsabilidad. ¡Únete a la aventura!",
             newsTitle: "Últimas Noticias",
             newsItems: [
                 {
@@ -127,7 +127,7 @@ const Home = ({ selectedLanguage }) => {
                     image: jessieImageEsp,
                     title: "3,000 de audiencia en primer show de Energy & U",
                     date: "27 de enero del 2023",
-                    description: "EDINBURG, Texas. Más de 3,000 asitentes presenciaron la primera presentación en vivo del espectáculo \"Energy & U\" de UTRGV, un espectáculo lleno de explosiones, burbujas y mucha diversión y aprendizaje.",
+                    description: "EDINBURG, Texas. Más de 3,000 asitentes presenciaron la primera presentación en vivo del espectáculo 'Energy & U' de UTRGV, un espectáculo lleno de explosiones, burbujas y mucha diversión y aprendizaje.",
                     link: "https://texasborderbusiness.com/3000-attend-energy-u-first-live-show/",
                     imageSrc: "images/jessie_esp.PNG"
                 },
@@ -147,7 +147,10 @@ const Home = ({ selectedLanguage }) => {
                         <div className="subtext">{t.subtext}</div>
                         <div className="button_container d-flex justify-content-center align-items-center mt-3">
                             <div className="heartbeat">
-                                <a className="btn btn-link first-link" href="/game">{t.experimentsButton}</a>
+                                <a className="btn btn-link first-link custom-button-size" href="/game">{t.experimentsButton}</a>
+                            </div>
+                            <div className="heartbeat">
+                                <a className="btn btn-link first-link custom-button-size" href="/lesson-plans">{t.activities}</a>
                             </div>
                         </div>
                     </div>

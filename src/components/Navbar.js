@@ -7,8 +7,8 @@ const Navbar = ({ onLanguageChange }) => {
   const [selectedLanguage, setSelectedLanguage] = useState('en');
 
   const languages = {
-    en: { Home: 'Home', Activities: 'Games', FAQ: 'FAQ', Downloads: 'Downloads', Meet: 'Meet', label: 'ENG' },
-    es: { Home: 'Inicio', Activities: 'Juegos', FAQ: 'Preguntas', Downloads: 'Descargas', Meet: 'Encuentro', label: 'ESP' },
+    en: { Home: 'Home', Activities: 'Games', FAQ: 'FAQ', Downloads: 'Lesson Plans', Meet: 'Meet', label: 'ENG' },
+    es: { Home: 'Inicio', Activities: 'Juegos', FAQ: 'Preguntas', Downloads: 'Planificaciones', Meet: 'Encuentro', label: 'ESP' },
   };
 
   const handleLanguageClick = (event) => {

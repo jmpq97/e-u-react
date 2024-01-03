@@ -45,7 +45,7 @@ const FAQ = () => {
           What is Energy & U?
         </div>
         <div className="faq-answer">
-          Energy and U, an initiative originally conceived and developed at the University of Minnesota in 2007, underwent significant changes in 2019 under the guidance of Dr. Karen Lozano and her team, thanks to a grant from the National Science Foundation. This enabled the Show migration to the Rio Grande Valley and the important adaptation of its content for the local audience, including a translation of the entire show into Spanish. At its core, Energy and U represents a fully produced, on-stage science extravaganza meticulously crafted that provides an understanding of the first law of thermodynamics to students across elementary, middle, and high schools. Our mission extends beyond the stage; our aim is to provide a comprehensive educational and fun experience empowering both students and teachers by equipping them with the tools necessary to master the first law of thermodynamics in and out of the classroom.
+        Energy and U is a fully produced, on-stage science extravaganza that provides an understanding of the first law of thermodynamics to students across elementary, middle, and high-school levels. Our mission extends beyond the stage; we intend to provide a comprehensive educational and fun experience empowering both students and teachers by equipping them with the necessary tools to master the first law of thermodynamics in and out of the classroom. E&U was originally conceived and developed at the University of Minnesota in 2007 by Professors Mark Hillmyer, Frank Bates, and David Blank, and currently (at UMN) under the direction of Professor Aaron Massari. In 2019, E&U was significantly enriched, migrated to South Texas, and translated to Spanish by a team led by Professors Karen Lozano, Arturo Fuentes, and Brian Warren. Numerous outstanding students and staff from UMN and UTRGV have actively participated in E&U. 
         </div>
       </div>
 
@@ -54,7 +54,7 @@ const FAQ = () => {
           How can I join the Energy & U Adventure?
         </div>
         <div className="faq-answer">
-          Joining the Energy & U Adventure is easy and accessible to anyone interested in energy! While Energy and U remains a free live show at the University of Texas, we've expanded our reach through this website. Here, you can engage with select show experiments, access comprehensive information, and even find lesson plans. Our mission extends beyond the stage; now, anyone with an interest in energy can visit our website to explore and learn about this vital topic.
+         Joining the Energy & U Adventure is easy and accessible to anyone interested in energy! Energy and U remains a FREE live show at the University of Texas Rio Grande Valley and at The University of Minnesota, through this website we are further expanding our reach. Here, you can start or continue the learning experience through interactive games and lesson plans.
         </div>
       </div>
 

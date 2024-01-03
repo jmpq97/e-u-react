@@ -125,9 +125,35 @@ h2 {
 .button_container {
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 380px;
-  left: 43%;
+  align-items: center;
+  gap: 65px;
+}
+
+.button {
+  display: inline-block; /* or 'block' if they are not inline */
+  padding: 10px 20px; /* Adjust padding to control the size */
+  font-size: 1em; /* Adjust font size as needed */
+  text-align: center; /* Ensure text is centered */
+  border: none; /* Assuming you do not want borders */
+  background-color: var(--secondary-color); /* Set the background color */
+  color: white; /* Set the text color */
+  border-radius: 5px; /* Set the border-radius if you want rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+  width: 150px; /* Set a fixed width or use 'min-width' to ensure they are at least a certain width */
+  /* Add any additional styling you want for your buttons */
+}
+
+.custom-button-size {
+  display: inline-block; /* or 'block' if they are not inline */
+  padding: 10px 20px; /* Adjust padding to control the size */
+  font-size: 1em; /* Adjust font size as needed */
+  text-align: center; /* Ensure text is centered */
+  min-width: 150px; /* Use min-width to ensure buttons can expand for longer text if needed */
+  /* Add any other styling you want for your buttons */
+}
+
+.button:active {
+  background-color: darken(var(--secondary-color), 10%); /* Optional: Change color when active/pressed */
 }
 
 .heartbeat,
@@ -140,14 +166,10 @@ h2 {
 .heartbeat {
   background-color: var(--secondary-color);
   color: white;
-  margin-right: 20px;
   padding: 20px;
   font-size: x-large;
-  box-shadow: 10px 5px 5px rgb(0, 0, 0);
-  animation: heartbeat 1.5s ease-in-out 5s infinite both;
-  position: absolute;
-  top: -215px;
-  left: 20px;
+  box-shadow: 4px 2px 5px rgb(0, 0, 0);
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
 .video-btn {
@@ -238,6 +260,7 @@ a.first-link:active {
 
 .subtitleBottom {
   font-size: 25px;
+  padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: black;
   text-align: center;
