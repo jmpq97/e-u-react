@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v3
       
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v2  # If available, consider updating to @v3 for the latest version
         with:
-          node-version: '16'
+          node-version: '18'  # Updated to Node.js version 18
 
       - name: Install Dependencies
         run: npm install # or npm ci to install dependencies based on package-lock.json
@@ -29,3 +29,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ENERGY_AND_U }}'
           channelId: live
           projectId: energy-and-u
+          # You can specify the Firebase CLI version here if needed
